@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #084066;
+}
+#heading {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heading h1 {
+    font-size: 10rem;
+    color: rgb(224, 174, 9);
+    letter-spacing: 6px;
+    font-family: 'Lobster', cursive;
+}
+
+.player-title {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-title h3 {
+    margin: 0px 12rem;
+    padding: 0px 10px;
+    color: rgb(19, 233, 233);
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#dice {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dice .dice-look {
+    height: 80%;
+    width: 20%;
+    margin: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: rgb(255, 56, 56);
+}
+#dice .dice-look .l-dots {
+    height: 25%;
+    width: 25%;
+    margin: 16px 0px;
+    border-radius: 50%;
+    background-color: white;
+}
+#dice .dice-look .r-dots {
+    height: 25%;
+    width: 25%;
+    margin: 16px 0px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h3 {
+    color: white;
+    font-family: 'Alata', sans-serif;   
+}
+
+/** These class is for JavaScript */
+.heading-winner {
+    font-size: 10rem;
+    color: rgb(224, 174, 9);
+    letter-spacing: 6px;
+    font-family: 'Lobster', cursive;
+}
+.invisible-dots {
+    /* display: none; */
+    visibility: hidden;
+}
+
+@media (max-width: 480px) {
+    #heading {
+        width: 100vw;
+        height: 30vh;
+        text-align: center;
+    }
+    .heading-winner {
+        font-size: 5rem;
+    }
+    .player-title h3 {
+        font-size: 2rem;
+        /* justify-content: center; */
+        margin: 0px 50px;
+        padding: 0px;
+    }
+    #dice {
+        height: 40vh;
+    }
+    #dice .dice-look {
+        height: 70%;
+        width: 40%;
+        margin: 0px 10px;
+        background-color: rgb(255, 56, 56);
+        justify-content: space-evenly;
+    }
+    #dice .dice-look .l-dots {
+        margin: 10px;
+    }
+    #dice .dice-look .r-dots {
+        margin: 10px;
+    }
+}
+@media (min-width: 481px) and (max-width: 1200px) {
+    #heading {
+        width: 100vw;
+        height: 30vh;
+        text-align: center;
+    }
+    .heading-winner {
+        font-size: 5rem;
+    }
+    .player-title h3 {
+        font-size: 2rem;
+        /* justify-content: center; */
+        margin: 0px 50px;
+        padding: 0px;
+    }
+    #dice {
+        height: 50vh;
+    }
+    #dice .dice-look {
+        height: 70%;
+        width: 40%;
+        margin: 0px 10px;
+        background-color: rgb(255, 56, 56);
+        justify-content: space-evenly;
+    }
+    #dice .dice-look .l-dots {
+        margin: 8px;
+    }
+    #dice .dice-look .r-dots {
+        margin: 8px;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #dice .dice-look {
+        justify-content: space-evenly;
+    }
+    #dice .dice-look .l-dots {
+        margin: 5px;
+    }
+    #dice .dice-look .r-dots {
+        margin: 5px;
+    }
+}
+@media (min-width: 1601px) {
+    #dice .dice-look {
+        justify-content: space-evenly;
+    }
+    #dice .dice-look .l-dots {
+        margin: 5px;
+    }
+    #dice .dice-look .r-dots {
+        margin: 5px;
+    }
+}
